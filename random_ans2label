@@ -1,0 +1,21 @@
+import pickle
+import random
+
+path = 'v2/trainval_ans2label.pkl'  # path='/root/……/aus_openface.pkl'   pkl文件所在路径
+
+f = open(path, 'rb')
+data = pickle.load(f)
+
+print(data)
+print('----------------------------------------------------------')
+
+k = data.keys()
+v = data.values()
+lk = list(k)
+lv = list(v)
+random.shuffle(lk)
+print(lk)
+pkl = dict(zip(lk, lv))
+print(pkl)
+with open('v2/train_test_ans2labele.pkl', 'wb') as f:
+    pickle.dump(pkl, f)
