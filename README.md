@@ -1,4 +1,5 @@
 # ShufflingBias
+
 Here is the implementation of our paper **[Overcoming Language Priors in Visual Question Answering by Shuffling Bias with Two-stageTraining Strategy](https://ieeexplore.ieee.org/abstract/document/10214540/) (Accepted by IEEE Access 2023).**
 
 > Recent research has revealed the notorious language prior problem in visual question answering (VQA) tasks based on visual-textual interaction, which indicates that well-developed VQA
@@ -13,20 +14,20 @@ Here is the implementation of our paper **[Overcoming Language Priors in Visual 
 This repository contains code modified from [SSL](https://github.com/CrossmodalGroup/SSL-VQA), many thanks! 
 Most of the code content is based on the above link, the specific changes are as follows:
 
-## Requirements
+## 1. Requirements
 python 3.8.8
 pytorch 1.9.0+cu111
 cuda 11.0
 gpu nvidia2080ti（11G）
 
 
-## data
+## 2. Data
 We uploaad the relevant data to the [baidu disk] 链接：https://pan.baidu.com/s/1efOcEBtR5CZtAQ8JyIRriA 提取码：lh5w，which include best model pth
 
-## code
+## 3. Code
 This file contains the complete modified code
 
-## training
+## 4. Training
 
 ```python
 CUDA_VISIBLE_DEVICES=3 python main.py --dataroot data/vqacp2/ --img_root data/coco/ --output [0.1-2]/ --self_loss_weight 3 --ml_loss
@@ -34,7 +35,7 @@ CUDA_VISIBLE_DEVICES=3 python main.py --dataroot data/vqacp2/ --img_root data/co
 
 ** Note that，we have supply some shuffling bias in cache file。For the get_bias function we apply it to the training set, not to the test set.**
 
-## Citation
+## 5. Citation
 
 ```bibtex
 @article{zhao2023overcoming,
@@ -49,4 +50,4 @@ CUDA_VISIBLE_DEVICES=3 python main.py --dataroot data/vqacp2/ --img_root data/co
   ```
 
 ## Acknowledgments
-Our code is based on [SSL]([https://github.com/cshizhe/VLN-DUET](https://github.com/CrossmodalGroup/SSL-VQA)) for extract view features. Thanks for their great works!
+Our code is based on [SSL](https://github.com/CrossmodalGroup/SSL-VQA) for extract view features. Thanks for their great works!
