@@ -1,5 +1,5 @@
 # ShufflingBias
-Here is the implementation of our paper Overcoming Language Priors in Visual Question Answering by Shuffling Bias with Two-stageTraining Strategy](https://ieeexplore.ieee.org/abstract/document/10214540/) (Accepted by IEEE Access 2023).
+Here is the implementation of our paper **[Overcoming Language Priors in Visual Question Answering by Shuffling Bias with Two-stageTraining Strategy](https://ieeexplore.ieee.org/abstract/document/10214540/) (Accepted by IEEE Access 2023).**
 
 > Recent research has revealed the notorious language prior problem in visual question answering (VQA) tasks based on visual-textual interaction, which indicates that well-developed VQA
  models rely on learning shortcuts from questions without fully considering visual evidence.To tackle this problem, most existing methods focus on decreasing the incentive to learn prior knowledge by adding
