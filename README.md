@@ -34,7 +34,7 @@ CUDA_VISIBLE_DEVICES=3 python main.py --dataroot data/vqacp2/ --img_root data/co
 
 ** Note that，we have supply some shuffling bias in cache file。For the get_bias function we apply it to the training set, not to the test set.**
 
-## 7. Citation
+## Citation
 
 ```bibtex
 @article{zhao2023overcoming,
